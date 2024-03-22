@@ -1,0 +1,19 @@
+switch (choice) {
+			case 1:
+				Ruppe_to_other(amount);
+				break;
+			case 2:
+				Dollar_to_other(amount);
+				break;
+			case 3:
+				Euro_to_other(amount);
+				break;
+			case 4:
+				Pound_to_other(amount);
+				break;
+			case 5:
+				transferMoney(amount); // To Transfer Money
+				break;
+			default:
+				System.out.println("Invalid choice");
+			}
