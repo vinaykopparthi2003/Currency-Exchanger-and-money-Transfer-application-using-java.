@@ -1,0 +1,37 @@
+public static void Dollar_to_other(double amt) {
+
+		double rupeeRate = 79.37;
+		double euroRate = 0.98;
+		double poundRate = 0.79;
+		double commissionPercentage;
+		if (amt <= 5000) {
+			commissionPercentage = 0.10; // 10% commission for amounts <= 5000
+		} else {
+			commissionPercentage = 0.13; // 13% commission for amounts > 5000
+		}
+
+		System.out.println("1 Dollar = " + 79.37 + " Ruppe");
+
+		System.out.println(amt + " Dollar = " + (amt * 79.37) + " Ruppe (Before Comission)");
+
+		double rupeeAmount = amt * rupeeRate * (1 - commissionPercentage);
+
+		System.out.println(amt + " Dollar = " + rupeeAmount + " Rupee (After Commission)\n");
+
+		System.out.println("1 Dollar= " + 0.98 + " Euro");
+
+		System.out.println(amt + " Dollar = " + (amt * 0.98) + " Euro (Before Comission)");
+
+		double euroAmount = amt * euroRate * (1 - commissionPercentage);
+
+		System.out.println(amt + " Dollar = " + euroAmount + "Euro (After Commission)\n");
+
+		System.out.println("1 Dollar= " + 0.79 + " Pound");
+
+		System.out.println(amt + " Dollar = " + (amt * 0.79) + " Pound (Before Comission)");
+
+		double poundAmount = amt * poundRate * (1 - commissionPercentage);
+
+		System.out.println(amt + " Dollar = " + poundAmount + "pound (After Commission)\n");
+
+	}
