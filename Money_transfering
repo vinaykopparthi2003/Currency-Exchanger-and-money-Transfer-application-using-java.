@@ -1,0 +1,30 @@
+	public static void transferMoney(double amt) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Transfer Money to Bank Account");
+		System.out.println("Enter Bank Account Number:");
+		String accountNumber = sc.nextLine();
+
+		System.out.println("Enter Account Holder Name:");
+		String accountHolderName = sc.nextLine();
+
+		System.out.println("Enter Bank Name:");
+		String bankName = sc.nextLine();
+
+		System.out.println("Enter Branch Name:");
+		String branchName = sc.nextLine();
+
+		System.out.println("Enter IFSC Code:");
+		String ifscCode = sc.nextLine();
+
+		// Perform money transfer operation using the provided bank account details
+
+		System.out.println("Money transfer initiated to the following bank account:");
+		System.out.println("Account Number: " + accountNumber);
+		System.out.println("Account Holder Name: " + accountHolderName);
+		System.out.println("Bank Name: " + bankName);
+		System.out.println("Branch Name: " + branchName);
+		System.out.println("IFSC Code: " + ifscCode);
+		System.out.println("Amount Transferd: " + amt);
+		System.out.println("Money transferred successfully.");
+	}
