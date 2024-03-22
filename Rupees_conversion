@@ -1,0 +1,37 @@
+public static void Ruppe_to_other(double amt) {
+
+		double dollarRate = 0.013;
+		double euroRate = 0.012;
+		double poundRate = 0.0095;
+		double commissionPercentage;
+		if (amt <= 5000) {
+			commissionPercentage = 0.08; // 8% commission for amounts <= 5000
+		} else {
+			commissionPercentage = 0.10; // 10% commission for amounts > 5000
+		}
+
+		System.out.println("1 Ruppe = " + 0.013 + " Dollar");
+
+		System.out.println(amt + " Ruppe = " + (amt * 0.013) + " Dollars (Before Comission)");
+
+		double dollarAmount = amt * dollarRate * (1 - commissionPercentage);
+
+		System.out.println(amt + " Rupee = " + dollarAmount + " Dollar (After Commission)\n");
+
+		System.out.println("1 Ruppe = " + 0.012 + " Euro");
+
+		System.out.println(amt + " Ruppe = " + (amt * 0.012) + " Euro (Before Comission)");
+
+		double euroAmount = amt * euroRate * (1 - commissionPercentage);
+
+		System.out.println(amt + " Rupee = " + euroAmount + " Euro (After Commission)\n");
+
+		System.out.println("1 Ruppe = " + 0.0095 + " Pounds");
+
+		System.out.println(amt + " Ruppe = " + (amt * 0.0095) + " Pounds (Before Comission)");
+
+		double poundAmount = amt * poundRate * (1 - commissionPercentage);
+
+		System.out.println(amt + " Rupee = " + poundAmount + " pounds (After Commission)\n");
+
+	}
